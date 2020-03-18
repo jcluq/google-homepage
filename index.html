@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Home Page</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+        }
+
+        #contenedor-header{
+            font-size: 13px;
+            min-width: 181px;   
+            height: 30px;
+            display: flex;  
+            text-align: right;
+            justify-content: flex-end;
+            flex-direction: row;
+            padding: 10px 15px 10px 0px;
+        }
+
+        #link-gmail{
+            align-self: center;
+            color:rgba(0,0,0,0.87);
+            text-decoration: none;
+            margin:0px 15px 0px 0px;
+        }
+        #link-imagenes{
+            align-self: center;
+            color:rgba(0,0,0,0.87);
+            text-decoration: none;
+            margin:0px 15px 0px 0px;
+
+            
+        }
+        #boton-productos{
+            align-self: center;
+            opacity: 50%;
+            margin:0px 15px 0px 0px;
+
+        }
+        #boton-sesion{
+            color:white;    
+            background-color:rgb(66, 133, 244);
+            padding: 8px 15px 22px 15px;
+            margin: 0px 5px 15px 0px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+
+        }
+        div{
+            display: block;
+        }
+        #contenedor-central{
+            padding-top: 150px;
+            display: block;
+            text-align: center;
+            margin: auto 0;
+        }
+
+
+        #logo{
+            
+            
+            max-width: 272;
+            height: auto;
+            margin: 10px;
+        }
+        #buscador{
+            display: flex;
+            flex-direction: row;
+            border:1px solid #dfe1e5;
+            max-width: 578px;
+            height: 44px;
+            margin: auto  ;
+            border-radius: 24px;
+            
+        }
+        #glass{
+            display:flex;
+            margin: 0 auto;
+            width:15px;
+            height:15px;
+            padding: 15px;
+            opacity: 50%;
+
+        }
+        #micro{
+            display:flex;
+            margin: 0 auto;
+            width:30px;
+            height: 30px;
+            padding: 8px 10px
+        }
+        #texto{
+            margin: auto 0;
+            border-color:transparent;
+            display:flex;
+            flex: 100%;
+            outline:none;
+        }
+
+        
+
+        #contenedor-botones-busqueda{
+            display: flex;
+            width: 25%;
+            margin: 0 auto ;
+            height: 50px;
+            padding:16px;
+            margin: 10px auto  0;
+            justify-content: center;
+            
+            
+        }
+
+        .botones-buscador{
+            height: 36px;
+            display:flex;       
+            border: 1px solid;
+            border-color: #f2f2f2;
+            color:#5F6368;
+            background-color: #f2f2f2;
+            border-radius: 4px ;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0px 16px;
+            
+            
+        }
+        #link-ingles{
+            margin: 0px 0px 14px;
+        }
+
+        
+       
+
+
+    </style>
+</head> 
+<body>
+    <header>
+        <div id="contenedor-header">
+            <a id="link-gmail" href="http://mail.google.com/">Gmail</a>
+            <a id="link-imagenes" href="https://www.google.com/imghp">Imagenes</a>
+            <a id="boton-productos" href="https://www.google.com/intl/en/about/products?tab=ih" role="button"><img src="download.svg" width="16px" height="16px" alt="imagen productos"></a>
+            <a id="boton-sesion" href="https://accounts.google.com/ServiceLogin?hl=en" role="button">Iniciar sesion</a>
+        </div>
+    </header>
+    <main>
+        <div id="contenedor-central">
+    <div id="logo">
+        <img src="googlelogo.png" id="logo">
+    </div>
+   
+    <form >
+        <div id="buscador">
+        <img id="glass" src="search.png"   alt="" >
+        <input id="texto" type="text">
+        <img src="micro.jpg" alt="" id="micro"> 
+
+    </div>
+  
+    
+    <div id="contenedor-botones-busqueda">
+        <input type="submit" value="Buscar con google"   id="boton-buscar" class="botones-buscador">
+        <input type="submit" value="Me siento con suerte"   id="boton-suerte" class="botones-buscador">
+    </div>
+    </form>
+    <div id="link ingles">
+        Ofrecido por Google en: <a href="">English</a></h4>
+    </div>
+</div>
+</main> 
+
+
+</body>
+</html> 
+
