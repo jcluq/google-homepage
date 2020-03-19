@@ -7,6 +7,7 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
             font-size: small;
+            height:100%;
         }
 
         #contenedor-header{
@@ -34,12 +35,21 @@
 
             
         }
+
+        #link-gmail:hover, #link-imagenes:hover{
+            text-decoration: underline;
+        }
         #boton-productos{
             align-self: center;
             opacity: 50%;
             margin:0px 15px 0px 0px;
 
         }
+
+        #boton-productos:hover{
+            opacity: 100%;
+        }
+
         #boton-sesion{
             color:white;    
             background-color:rgb(66, 133, 244);
@@ -76,6 +86,11 @@
             height: 44px;
             margin: auto  ;
             border-radius: 24px;
+            
+        }
+
+        #buscador:hover{
+            box-shadow: 0 2px 4px rgba(0,0,0,0.19);
             
         }
         #glass{
@@ -119,7 +134,7 @@
         .botones-buscador{
             height: 36px;
             display:flex;       
-            border: 1px solid;
+            border: .5px solid;
             border-color: #f2f2f2;
             color:#5F6368;
             background-color: #f2f2f2;
@@ -131,9 +146,82 @@
             
             
         }
+
+        .botones-buscador:hover{
+            background-color: #f8f8f8;
+            border: 1px solid #c6c6c6;
+            color: #222;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+        }
+        
         #link-ingles{
             margin: 0px 0px 14px;
         }
+        #footer{
+            position: fixed;
+            bottom: 0%;
+            left: 0%;
+            right: 0%;
+            height:83px;
+            display:flex;
+            flex-direction: column;
+            
+            
+        }
+        .footer-elem{
+            flex:50%;
+            border-top: 1px solid #e4e4e4;
+            background-color: rgb(242, 242, 242);
+            display:flex;
+            color: rgba(0,0,0,.54);
+            
+        }
+
+        #footer-pais{
+            font-size: 15px;
+            margin-left:30px;
+            margin-top: 11px;
+            
+        }
+
+        #footer-inf{
+            display: flex;
+            flex-direction: row;
+            margin-left:3px;
+            justify-content: space-between;
+        }
+        .link-footer{
+            
+            text-decoration: none;
+            margin-top:12px;
+            margin-left: 27px;
+             
+            color: rgb(95, 99, 104);
+
+        }
+        #footer-inf-izq{
+            text-align: left;
+            display:flex;
+            justify-content: flex-start;
+        }
+
+        #footer-inf-der{
+            text-align: right;
+            display:flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            width: auto;
+            margin-right:30px;
+        }
+
+        .link-footer:hover{
+            text-decoration: underline;
+        }
+        
+
+
+
+
 
         
        
@@ -175,6 +263,24 @@
     </div>
 </div>
 </main> 
+<footer id=footer>
+
+    <div class="footer-elem" id="footer-sup"><span id="footer-pais">Colombia</span></div>
+   
+    <div class="footer-elem" id="footer-inf">
+        <div id="footer-inf-izq">
+            <a class="link-footer link-underline" id="link-publicidad" href="https://ads.google.com/intl/en_CO/home/">Publicidad</a>
+            <a class="link-footer link-underline" id="link-negocios" href="https://www.google.com/services">Negocios</a>
+            <a class="link-footer link-underline" id="link-acercade" href="https://about.google/">Sobre Google</a>
+            <a class="link-footer " id="link-como" href="https://www.google.com/search/howsearchworks"> Como funciona la Busqueda</a>
+    </div>
+        <div id="footer-inf-der">
+            <a class="link-footer" id="link-privacidad" href="">Privacidad</a>
+            <a class="link-footer" id="link-condiciones" href="">Condiciones</a>    
+            <a class="link-footer" id="link-preferencias" href="">Preferencias</a>
+        </div>
+    </div>
+</footer>
 
 
 </body>
